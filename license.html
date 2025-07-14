@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lisensi | Oniichan.ceo</title>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+    .language-switch { position: absolute; top: 1rem; right: 1rem; }
+    .report-button { margin-top: 2rem; display: inline-block; background: #ff0066; color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; }
+    .license-container { max-width: 800px; margin: auto; padding: 2rem; }
+    .en { display: none; }
+  </style>
+<script>
+    function switchLanguage(lang) {
+      document.querySelector('.id').style.display = lang === 'id' ? 'block' : 'none';
+      document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body oncontextmenu="return false;">
+<script>document.addEventListener("contextmenu", e => e.preventDefault());</script>
+<div class="language-switch">
+<button onclick="switchLanguage('id')">🇮🇩</button>
+<button onclick="switchLanguage('en')">🇺🇸</button>
+</div>
+<div class="license-container">
+<div class="id">
+<h1>Lisensi Logo Oniichan.ceo</h1>
+<p>Logo yang ditampilkan di situs ini adalah properti resmi dari Oniichan.ceo dan dilindungi oleh undang-undang hak cipta nasional dan internasional.</p>
+<p>Penggunaan tanpa izin atau membuat logo yang mirip dengan ini dianggap sebagai pelanggaran hukum. Untuk keperluan lisensi atau kerja sama penggunaan, silakan hubungi:</p>
+<ul>
+<li>Email: oniichan.ceo@icloud.com</li>
+<li>Email Alternatif: Oniichan.ceo@gmail.com</li>
+<li>WhatsApp: 081265966565</li>
+</ul>
+<a class="report-button" href="mailto:oniichan.ceo@icloud.com?subject=Pelaporan%20Pelanggaran%20Lisensi">Laporkan Pelanggaran</a>
+</div>
+<div class="en">
+<h1>Oniichan.ceo Logo License</h1>
+<p>The logo displayed on this site is the official property of Oniichan.ceo and is protected by national and international copyright laws.</p>
+<p>Unauthorized use or reproduction of this logo or any similar logo is considered a violation. To request permission or licensing, please contact:</p>
+<ul>
+<li>Email: oniichan.ceo@icloud.com</li>
+<li>Alternate Email: Oniichan.ceo@gmail.com</li>
+<li>WhatsApp: +62 812-6596-6565</li>
+</ul>
+<a class="report-button" href="mailto:oniichan.ceo@icloud.com?subject=Report%20License%20Violation">Report Violation</a>
+</div>
+</div>
+<img alt="Karakter resmi Oniichan.ceo" src="assets/oniichan_character.png" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"/><p style="text-align: center; font-weight: bold; margin-top: -10px;">Karakter resmi Oniichan.ceo</p>
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable long-press/save on mobile
+document.addEventListener('touchstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
+<script><script>
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script></script></body>
+</html>

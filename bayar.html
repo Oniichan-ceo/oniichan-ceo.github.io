@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Beli Gambar Oniichan</title>
+<style>
+    body { font-family: sans-serif; text-align: center; background: #111; color: white; }
+    img { border-radius: 12px; margin-top: 20px; }
+    .box { background: #222; padding: 30px; border-radius: 10px; display: inline-block; margin-top: 50px; }
+    a { color: #00f0ff; text-decoration: none; display: block; margin-top: 20px; }
+  </style>
+</head>
+<body>
+<div class="box">
+<h2>Beli Gambar Eksklusif Oniichan</h2>
+<img alt="" src="preview.jpg" width="300"/><br/>
+<p><strong>Harga:</strong> RpHarga: Rp500.000</p>
+<p><strong>Pembayaran via:</strong> QRIS, DANA, GoPay, ShopeePay, Bank Transfer</p>
+<img alt="QR Code Pembayaran" src="OniichanLogo_With_Updated_QR.png" width="250"/>
+<p>Setelah bayar, kamu akan dapat <strong>Kode Kunci</strong>.</p>
+<a href="akses.html">➡️ Masukkan kode untuk akses</a>
+</div>
+<div style="text-align:center; margin-top: 40px;">
+<h2>Scan QRIS untuk Pembayaran</h2>
+<img alt="QRIS" src="assets/img/qris.jpg" style="max-width:300px; width:100%; border:1px solid #ccc; padding:10px; border-radius:10px;">
+</img></div>
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable long-press/save on mobile
+document.addEventListener('touchstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
+<script><script>
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script></script></body>
+</html>

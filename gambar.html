@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Gambar Premium Oniichan</title>
+<style>
+    body { background: #000; text-align: center; color: white; }
+    img { margin-top: 30px; max-width: 90vw; border: 5px solid #444; border-radius: 12px; }
+  </style>
+</head>
+<body>
+<h2>🎉 Terima kasih telah membeli!</h2>
+<img alt="Gambar Premium Oniichan" src="premium_oniichan.jpg"/>
+<p>© Oniichan.ceo</p>
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable long-press/save on mobile
+document.addEventListener('touchstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
+<script><script>
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script></script></body>
+</html>

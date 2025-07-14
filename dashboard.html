@@ -1,0 +1,52 @@
+<?php
+session_start();
+if (!isset($_SESSION['license_id'])) {
+  header("Location: index.html");
+  exit;
+}
+?>
+<?php
+session_start();
+if (!isset($_SESSION['license_id'])) {
+  header("Location: login.html");
+  exit;
+}
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Dashboard Pemilik Lisensi</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #fefefe; }
+    .dashboard { max-width: 600px; margin: auto; padding: 2rem; background: #e8f5e9; border-radius: 10px; }
+  </style>
+</head>
+<body>
+<div class="dashboard">
+<h1>Selamat datang, <?php echo htmlspecialchars($_SESSION['license_id']); ?>!</h1>
+<p>Anda berhasil login. Gunakan halaman ini untuk melihat status lisensi dan akses lainnya.</p>
+<a href="auth/logout.php">🔒 Logout</a>
+</div>
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable long-press/save on mobile
+document.addEventListener('touchstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
+<script><script>
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script></script></body>
+</html>

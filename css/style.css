@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+.header {
+  background: linear-gradient(to right, gold, white);
+  padding: 1rem;
+  text-align: center;
+}
+.logo {
+  width: 90px;
+  border-radius: 50%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+nav a:hover {
+  color: gold;
+}
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.cta-button {
+  background-color: gold;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.cta-button:hover {
+  background-color: #d4af37;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  margin-top: 2rem;
+}
+
+
+/* Sidebar Styles */
+.oniichan-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+.oniichan-sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+.oniichan-sidebar a:hover {
+  background-color: #575757;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+}
+
+.oniichan-character {
+  width: 400px;
+  height: 600px;
+  background-image: url('../assets/oniichan_character.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+  filter: brightness(0.95);
+}
+.caption {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 8px;
+}
+.with-watermark {
+  position: relative;
+}
+.with-watermark::after {
+  content: "© Oniichan.ceo";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: sans-serif;
+}

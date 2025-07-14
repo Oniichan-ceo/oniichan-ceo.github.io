@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Top Up</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+<img alt="Logo Oniichan" class="logo" src="assets/img/logo.png"/>
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="about.html">Tentang</a></li>
+<li><a href="topup.html">Top Up</a></li>
+<li><a href="stickers.html">Stickers</a></li>
+<li><a href="streaming.html">Streaming</a></li>
+<li><a href="contact.html">Kontak</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1>Top Up Diamond Mobile Legends</h1>
+<ul>
+<li>86 DM - Rp 20.000</li>
+<li>172 DM - Rp 40.000</li>
+<li>257 DM - Rp 60.000</li>
+</ul>
+<p>Pembayaran: DANA, GoPay, ShopeePay</p>
+</section>
+</main>
+<footer>
+<p>© 2025 Oniichan</p>
+</footer>
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable long-press/save on mobile
+document.addEventListener('touchstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
+<script><script>
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script></script></body>
+</html>
